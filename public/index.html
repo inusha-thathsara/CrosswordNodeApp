@@ -1,0 +1,338 @@
+
+<head>
+  <title>Crossword Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+      padding: 32px 24px 24px 24px;
+    }
+    table#myTable {
+      border-collapse: separate;
+      border-spacing: 4px;
+      margin: 0 auto 24px auto;
+      background: #e9e9e9;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      overflow: hidden;
+    }
+    td {
+      width: 44px;
+      height: 44px;
+      background: #fff;
+      border-radius: 8px;
+      border: 1.5px solid #bdbdbd;
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+      transition: box-shadow 0.2s;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    td:focus-within {
+      box-shadow: 0 0 0 2px #7d2ae8;
+      border-color: #7d2ae8;
+    }
+    .editable-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-size: 1.3em;
+      font-weight: 600;
+      outline: none;
+      background: transparent;
+      border: none;
+      color: #222;
+      letter-spacing: 1px;
+      caret-color: #7d2ae8;
+    }
+    .number-span {
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      font-size: 0.7em;
+      color: #7d2ae8;
+      font-weight: bold;
+      pointer-events: none;
+      opacity: 0.85;
+    }
+    .rules {
+      color: #7d2ae8;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .app-title {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: #7d2ae8;
+      margin-bottom: 0.2em;
+      letter-spacing: 1px;
+      text-align: center;
+      text-shadow: 0 2px 8px rgba(125,42,232,0.08);
+    }
+    .subtitle {
+      font-size: 1.1em;
+  color: var(--subtitle);
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #888;
+      font-size: 0.95em;
+      padding: 16px 0 0 0;
+      border-top: 1px solid #eee;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 10px 2px; }
+      table#myTable td { width: 28px; height: 28px; font-size: 0.9em; }
+      .app-title { font-size: 1.3em; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div style="display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; gap:10px;">
+      <div class="app-title" style="grid-column:2; justify-self:center;">🧩 Crossword Puzzle</div>
+      <button id="themeSwitcher" class="button" style="grid-column:3; justify-self:end; padding: 6px 18px; font-size: 1em; min-width: 90px; background: var(--button-bg); color: var(--button-text); border: 1px solid var(--button-border);">🌙 Dark</button>
+    </div>
+    <div class="subtitle">Sharpen your mind! Fill the crossword and check your answers.</div>
+  </header>
+  <br><br>
+  <div class="container">
+    <div>
+    <span class="rules">* Please use simple English Letters only.</span><br><br>
+    </div>
+    <table id="myTable">
+      <tbody>
+        <!-- 10x10 table -->
+        <script>
+          const tableBody = document.createElement('tbody');
+          for (let i = 0; i < 10; i++) {
+            const row = document.createElement('tr');
+            for (let j = 0; j < 10; j++) {
+              const cell = document.createElement('td');
+              const editableDiv = document.createElement('div');
+              editableDiv.className = 'editable-content'; // Add class for styling
+              editableDiv.contentEditable = true; // Make the cell's content editable
+
+              // Add input event to limit cell input to one character
+              editableDiv.addEventListener('input', function () {
+                if (editableDiv.textContent.length > 1) {
+                  editableDiv.textContent = editableDiv.textContent[0]; // Keep only the first character
+                }
+              });
+
+              // Add focus effect
+              editableDiv.addEventListener('focus', function () {
+                cell.style.boxShadow = '0 0 0 2px #7d2ae8';
+                cell.style.borderColor = '#7d2ae8';
+              });
+              editableDiv.addEventListener('blur', function () {
+                cell.style.boxShadow = '';
+                cell.style.borderColor = '';
+              });
+
+              cell.appendChild(editableDiv);
+              row.appendChild(cell);
+            }
+            tableBody.appendChild(row);
+          }
+          document.getElementById('myTable').appendChild(tableBody);
+        </script>
+      </tbody>
+    </table>
+    <div>
+      <h3 style="margin-bottom: 6px; color: #7d2ae8;">Hints:</h3>
+    </div>
+    <div id="hints"></div>
+    <button id="submitBtn" class="button" style="margin-top: 18px;">Submit</button>
+  </div>
+  <footer>
+    &copy; 2025 Crossword Puzzle App. Made with <span style="color:#7d2ae8;">&#10084;</span> for word lovers.
+  </footer>
+
+  <script>
+    // Theme Switcher
+    const themeBtn = document.getElementById('themeSwitcher');
+    function setTheme(mode) {
+      if (mode === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeBtn.textContent = '☀️ Light';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        themeBtn.textContent = '🌙 Dark';
+      }
+      localStorage.setItem('theme', mode);
+    }
+    themeBtn.onclick = function() {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      setTheme(current === 'light' ? 'dark' : 'light');
+    };
+    // On load, set theme from localStorage or system
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved) setTheme(saved);
+      else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+      else setTheme('light');
+    })();
+
+    // Fetch the string from the Node.js server
+    fetch('/data')
+      .then(response => response.json())
+      .then(data => {
+        var output = data.output
+        var myStringUnedited = data.myStringUnedited
+        var answerArrayFlat = data.answerArrayFlat
+
+        // Check if the output contains the number "10"
+        if (myStringUnedited.includes("10")) {
+          window.location.reload(); // Reload the page
+        }
+
+        const legend = output.substring(440, 5000);
+        //console.log(legend)
+
+        document.getElementById('submitBtn').addEventListener('click', function () {
+          // Get the table element
+          const table = document.getElementById('myTable');
+          const rows = table.rows;  // Get all rows in the table
+          const tableData = [];     // Array to hold the table data
+
+          // Loop through each row and extract the data
+          for (let i = 0; i < rows.length; i++) {
+            const cells = rows[i].cells; // Get all cells in the row
+            const rowData = [];          // Array to hold the row data
+
+            for (let j = 0; j < cells.length; j++) {
+              // Get the text content of each cell and store it in rowData
+              rowData.push(cells[j].textContent.trim()); // trim() removes extra spaces
+            }
+
+            // Push the row data to the tableData array
+            tableData.push(rowData);
+          }
+
+          // Now `tableData` holds all the data entered by the user in the table
+          var tableDataStr = tableData.flat()
+          tableDataStr = tableDataStr.map(cell => cell.replace(/\d/g, ''));
+          //console.log('Submitted Table Data:', tableDataStr);
+          //console.log(answerArray)
+
+          // Check if the arrays have the same length
+          //console.log(answerArrayFlat)
+          tableDataStr = tableDataStr.map(cell => cell === '' ? '-' : cell);
+          //console.log(tableDataStr)
+          //console.log(answerArrayFlat.length)
+          tableDataStr.pop()
+          //console.log(tableDataStr.length)
+          answerArrayFlat.length == tableDataStr.length;
+          if (answerArrayFlat.length !== tableDataStr.length) {
+            alert("Score: Lengths are not equal");
+            return
+            window.location.reload(true);
+          }
+
+          // Check if all elements are the same
+          for (let i = 0; i < answerArrayFlat.length; i++) {
+            if (answerArrayFlat[i] !== tableDataStr[i]) {
+              alert("Score: 0");
+              return
+              window.location.reload(true);
+            }
+          }
+          alert('Score: 1')
+        });
+
+        let sentences = legend.split('.');
+
+        // Initialize a new paragraph string
+        let newParagraph = '';
+
+        // Loop through the sentences and add them to the new string
+        for (let i = 0; i < sentences.length; i++) {
+          newParagraph += sentences[i].trim(); // Remove extra spaces
+
+          // Check if the index is even (i + 1 is the count of full stops)
+          if ((i + 1) % 2 === 0) {
+            newParagraph += '.<br>'; // Add a line break after every even full stop
+          } else {
+            newParagraph += '.'; // Add the full stop for odd indices
+          }
+        }
+
+        // Remove any trailing line breaks or spaces
+        //newParagraph = newParagraph.replace(/\s*<br>\s*$/, '');
+        hints = document.getElementById('hints')
+        //console.log(newParagraph)
+        newParagraph = newParagraph.replace(/\.([^\s])/g, '. $1');
+        hints.innerHTML = newParagraph;
+
+        // Clean up the string by removing line breaks
+        myStringLine = myStringUnedited.replaceAll('\n', '').replaceAll('\r', ''); // Replace line breaks
+        //console.log(myStringLine);
+
+        // Create an array of characters from the cleaned string
+        myStringArray = Array.from(myStringLine);
+        myString = '';
+
+        // Build the string from even indexed characters
+        for (let i = 0; i < myStringArray.length; i += 1) {
+          myString += myStringArray[i];
+        }
+
+        const table = document.getElementById('myTable');
+        const rows = table.getElementsByTagName('tr');
+        let index = 0;
+
+        // Loop through each cell and fill with characters from the string
+        for (let i = 0; i < rows.length; i++) {
+          const cells = rows[i].getElementsByTagName('td');
+          for (let j = 0; j < cells.length; j++) {
+            if (index < myString.length) {
+              const editableDiv = cells[j].querySelector('.editable-content');
+              editableDiv.textContent = myString[index++];
+            } else {
+              cells[j].querySelector('.editable-content').textContent = ''; // Leave empty if string ends
+            }
+
+            // Check if cell contains '-' after populating the table
+            if (cells[j].querySelector('.editable-content').textContent === '-') {
+              cells[j].style.backgroundColor = 'black'; // Change background color
+              cells[j].querySelector('.editable-content').textContent = ''; // Remove the text completely
+              cells[j].querySelector('.editable-content').contentEditable = false; // Make the editable div uneditable
+              cells[j].style.pointerEvents = 'none'; // Disable any mouse events for the cell
+            }
+
+            // Check if the cell contains a number
+            const numberMatch = cells[j].querySelector('.editable-content').textContent.match(/\d/);
+            if (numberMatch) {
+              const number = numberMatch[0]; // Extract the number
+              const editableDiv = cells[j].querySelector('.editable-content');
+
+              // Clear the number from the editable content
+              editableDiv.textContent = editableDiv.textContent.replace(number, '');
+
+              // Create a span to display the number, make it uneditable
+              const numberSpan = document.createElement('span');
+              numberSpan.textContent = number;
+              numberSpan.className = 'number-span'; // Apply styles for the number
+              numberSpan.contentEditable = false; // Make the number uneditable
+
+              // Insert the span into the cell, aligning it top-left
+              cells[j].appendChild(numberSpan);
+            }
+          }
+        }
+      })
+      .catch(error => console.error('Error fetching data:', error));
+
+  </script>
+</body>

@@ -1,0 +1,212 @@
+/* Reset and themeable styles (clean) */
+* { box-sizing: border-box; }
+/* Theme Variables */
+:root {
+  --bg: linear-gradient(120deg, #f0e6ff 0%, #e6f0ff 100%);
+  --container-bg: #fff;
+  --text: #222;
+  --subtitle: #444;
+  --primary: #7d2ae8;
+  --table-bg: #e9e9e9;
+  --cell-bg: #fff;
+  --cell-border: #bdbdbd;
+  --cell-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  --number: #7d2ae8;
+  --button-bg: #7d2ae8;
+  --button-text: #fff;
+  --button-border: #7d2ae8;
+  --rules: #7d2ae8;
+  --hints-bg: #f7f3ff;
+  --hints-border: #e0d7f7;
+  --hints-text: #7d2ae8;
+  --footer-bg: #333;
+  --footer-text: #fff;
+}
+[data-theme="dark"] {
+  --bg: linear-gradient(120deg, #23243a 0%, #1a1b2b 100%);
+  --container-bg: #23243a;
+  --text: #f3f3f3;
+  --subtitle: #bdbdbd;
+  --primary: #b39ddb;
+  --table-bg: #23243a;
+  --cell-bg: #2e2f4a;
+  --cell-border: #44446a;
+  --cell-shadow: 0 1px 4px rgba(0,0,0,0.18);
+  --number: #b39ddb;
+  --button-bg: #44446a;
+  --button-text: #fff;
+  --button-border: #b39ddb;
+  --rules: #b39ddb;
+  --hints-bg: #23243a;
+  --hints-border: #44446a;
+  --hints-text: #b39ddb;
+  --footer-bg: #181828;
+  --footer-text: #bdbdbd;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+.container {
+  max-width: 900px;
+  margin: 80px auto 40px auto;
+  background: var(--container-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 32px 24px 24px 24px;
+  transition: background 0.3s;
+}
+header {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 10px;
+  text-align: center;
+  clear: both;
+  border-top: 1px solid #444;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+.rules {
+  font-size: 12px;
+  color: var(--rules);
+  text-align: justify;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#hints {
+  font-size: 15px;
+  color: var(--hints-text);
+  padding: 14px 16px;
+  border: 1.5px solid var(--hints-border);
+  background-color: var(--hints-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(125,42,232,0.07);
+  margin-bottom: 10px;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+table#myTable {
+  border-collapse: separate;
+  border-spacing: 4px;
+  margin: 0 auto 24px auto;
+  background: var(--table-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden;
+  transition: background 0.3s;
+}
+table#myTable td {
+  width: 44px;
+  height: 44px;
+  /* Keep crossword white cells always white regardless of theme */
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1.5px solid var(--cell-border);
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.3s;
+  box-shadow: var(--cell-shadow);
+  /* Use dark text for readability on white cells */
+  color: #222222;
+}
+table#myTable td:focus-within {
+  box-shadow: 0 0 0 2px var(--primary);
+  border-color: var(--primary);
+}
+table#myTable td:hover {
+  box-shadow: 0 0 0 2px var(--number);
+  border-color: var(--number);
+}
+.editable-content {
+  font-size: 1.3em;
+  font-weight: 600;
+  outline: none;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  letter-spacing: 1px;
+  caret-color: var(--primary);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s;
+}
+/* Ensure input text inside crossword cells stays dark on white background */
+table#myTable td .editable-content {
+  color: #222222;
+}
+.number-span {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font-size: 0.7em;
+  color: var(--number);
+  font-weight: bold;
+  pointer-events: none;
+  opacity: 0.85;
+  transition: color 0.3s;
+}
+.button {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: 1px solid var(--button-border);
+  color: var(--button-text);
+  cursor: pointer;
+  background-color: var(--button-bg);
+  transition: all 0.2s ease, background 0.3s, color 0.3s, border 0.3s;
+}
+/* Optional: bubble hover animations retained */
+.button:before,
+.button:after { position: absolute; content: ""; width: 150%; left: 50%; height: 100%; transform: translateX(-50%); z-index: -1000; background-repeat: no-repeat; }
+.button:hover:before { top: -70%; background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%), radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%), radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, #7d2ae8 20%, transparent 20%); background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%; background-position: 50% 120%; animation: greentopBubbles 0.6s ease; }
+.button:hover::after { bottom: -70%; background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%), radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle, #7d2ae8 20%, transparent 20%); background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%; background-position: 50% 0%; animation: greenbottomBubbles 0.6s ease; }
+@keyframes greentopBubbles { 0% { background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%; } 50% { background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%; } 100% { background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%; background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; } }
+@keyframes greenbottomBubbles { 0% { background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%; } 50% { background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%; } 100% { background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%; background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; } }
+@media only screen and (max-width: 768px) { body { font-size: 14px; } .container { padding: 10px 2px; } table#myTable td { width: 28px; height: 28px; font-size: 0.9em; } }
+@media only screen and (max-width: 480px) { body { font-size: 12px; } }
+.number-span {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font-size: 0.7em;
+  color: #7d2ae8;
+  font-weight: bold;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container { padding: 10px 2px; }
+  table#myTable td { width: 28px; height: 28px; font-size: 0.9em; }
+  .app-title { font-size: 1.3em; }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
