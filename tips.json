@@ -1,0 +1,19 @@
+{
+  "tips": [
+    "Use arrow keys to move around the grid quickly.",
+    "Stuck? Try switching between Across and Down clues to unlock letters.",
+    "You can save progress anytime; we also auto-save every 20 seconds.",
+    "Black squares are not editable—skip over them with the arrow keys.",
+    "Start with the shortest words; they’re often easier and reveal helpful letters.",
+    "Wrong answer? Don’t worry. You have multiple attempts before a reset.",
+    "Hover or tap clues to focus the first letter of that word in the grid.",
+    "Use backspace on an empty cell to jump to the previous editable cell.",
+    "Keep an eye on the timer—your solve time shows up on the dashboard.",
+    "Use Save Progress before leaving the page to ensure your latest changes persist.",
+    "Try to fill the common letters first—shared cells confirm multiple answers.",
+    "If the puzzle looks odd, refresh the page to generate a new one.",
+    "Numbers in cells indicate the start of a word; follow them to the clue list.",
+    "Your accuracy gauge improves with consistent correct solves.",
+    "Export your history for a record of your solves and timings."
+  ]
+}

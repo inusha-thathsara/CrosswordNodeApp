@@ -1,0 +1,22 @@
+[
+  ["pizza", "Flatbread with toppings, baked in an oven"],
+  ["sushi", "Rice rolls with fish or vegetables"],
+  ["taco", "Folded tortilla with fillings"],
+  ["pasta", "Italian noodles often served with sauce"],
+  ["curry", "Spiced dish from South Asia"],
+  ["burger", "Patty in a bun"],
+  ["salad", "Mixed raw vegetables dish"],
+  ["omelet", "Egg dish folded over fillings"],
+  ["steak", "Slice of beef for grilling"],
+  ["pancake", "Flat cake cooked on a griddle"],
+  ["waffle", "Batter cooked in patterned iron"],
+  ["noodles", "Long strips of pasta or dough"],
+  ["samosa", "Fried pastry with savory filling"],
+  ["dumpling", "Small dough parcel often steamed"],
+  ["risotto", "Creamy Italian rice dish"],
+  ["paella", "Spanish rice with seafood or meat"],
+  ["biryani", "Spiced rice with meat or vegetables"],
+  ["falafel", "Fried chickpea balls"],
+  ["shawarma", "Spit-roasted meat wrap"],
+  ["tiramisu", "Coffee-flavored Italian dessert"]
+]

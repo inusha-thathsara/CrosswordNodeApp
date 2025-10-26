@@ -1,4 +1,4 @@
-import random, re, time, string
+import random, re, time, string, json, os
 from copy import copy as duplicate
 # optional, speeds up by a factor of 4
 #import psyco
@@ -321,51 +321,56 @@ class Word(object):
 start_full = float(time.time())
 
 
-word_list_raw = ['saffron', 'The dried, orange yellow plant used to as dye and as acooking spice.'], \
-      ['pumpernickel', 'Dark, sour bread made from coarse ground rye.'], \
- ['leaven', 'An agent, such as yeast, that cause batter or dough to rise.'],\
- ['coda', 'Musical conclusion of a movement or composition.'], \
- ['paladin', 'A heroic champion or paragon of chivalry.'], \
- ['syncopation', 'Shifting the emphasis of a beat to the normally weakbeat.'], \
- ['albatross', 'A large bird of the ocean having a hooked beek and long,narrow wings.'], \
- ['harp', 'Musical instrument with 46 or more open strings played byplucking.'], \
- ['piston', 'A solid cylinder or disk that fits snugly in a larger cylinder and moves under pressure as in an engine.'], \
- ['caramel', 'A smooth chery candy made from suger, butter, cream or milkwith flavoring.'], \
- ['coral', 'A rock-like deposit of organism skeletons that make up reefs.'],\
- ['dawn', 'The time of each morning at which daylight begins.'], \
- ['pitch', 'A resin derived from the sap of various pine trees.'], \
- ['fjord', 'A long, narrow, deep inlet of the sea between steep slopes.'], \
- ['lip', 'Either of two fleshy folds surrounding the mouth.'], \
- ['lime', 'The egg-shaped citrus fruit having a green coloring and acidicjuice.'], \
- ['mist', 'A mass of fine water droplets in the air near or in contact withthe ground.'], \
- ['plague', 'A widespread affliction or calamity.'], \
- ['yarn', 'A strand of twisted threads or a long elaborate narrative.'], \
- ['yarn', 'A strand of twisted threads or a long elaborate narrative.'], \
- ['yarn', 'A strand of twisted threads or a long elaborate narrative.'], \
- ['yarn', 'A strand of twisted threads or a long elaborate narrative.'], \
- ['snicker', 'A snide, slightly stifled laugh.']
-
-
+"""Word list is now externalized to words.json.
+Provide a JSON array of [word, clue] pairs, e.g.:
+[
+  ["apple", "A fruit"],
+  ["python", "A programming language"]
+]
+Duplicate clues are filtered to keep the first occurrence.
 """
 
-word_list_raw = ['SAmudaya', 'The dried, orange yellow plant used to as dye and as acooking spice.'], \
- ['nirwana', 'Dark, sour bread made from coarse ground rye.'], \
- ['pali', 'An agent, such as yeast, that cause batter or dough to rise..'],\
- ['anatta', 'A heroic champion or paragon of chivalry.'], \
- ['bhavana', 'Shifting the emphasis of a beat to the normally weakbeat.'], \
- ['metta', 'Hint for metta'], \
- ['anicca', 'Hint for anicca'], \
- ['dharma', 'Hint for hint for dharma'], \
- ['sangha', 'Hint for sanga'], \
- ['magga', 'Hint for magga'], \
- ['nirodha', 'A large bird of the ocean having a hooked beek and long,narrow wings.'], \
- ['nirodha','this is nirodha'],\
- ['zzzzzzz','this is nirodha'],\
- ['dukkha', 'Musical conclusion of a movement or composition.'], \
- ['dukkha', 'Musical instrument with 46 or more open strings played byplucking.'],\
- ['dukkha', 'Musical instrument with 46 or more open strings played byplucking.'],\
- ['dukkha', 'this is dukka']
-"""
+# Load external word list
+def load_word_list(json_path="words.json"):
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    fp = os.path.join(base_dir, json_path)
+    try:
+        with open(fp, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        # Basic validation: expect list of 2-item lists or tuples
+        cleaned = []
+        for idx, item in enumerate(data):
+            if (isinstance(item, (list, tuple)) and len(item) == 2
+                and all(isinstance(x, str) for x in item)):
+                cleaned.append([item[0].strip(), item[1].strip()])
+            else:
+                # Skip malformed entries
+                pass
+        return cleaned
+    except FileNotFoundError:
+        print("words.json not found; using fallback empty list.")
+        return []
+    except json.JSONDecodeError as e:
+        print(f"Invalid JSON in words.json: {e}; using fallback empty list.")
+        return []
+
+# Randomly pick a wordset from a folder, fallback to words.json
+def pick_random_wordset_path(dir_name="wordsets"):
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    dir_path = os.path.join(base_dir, dir_name)
+    try:
+        if os.path.isdir(dir_path):
+            files = [os.path.join(dir_path, f) for f in os.listdir(dir_path)
+                     if f.lower().endswith('.json') and not f.startswith('.')]
+            if files:
+                return random.choice(files)
+    except Exception:
+        pass
+    # fallback to default file in root
+    return os.path.join(base_dir, 'words.json')
+
+wordset_path = pick_random_wordset_path()
+word_list_raw = load_word_list(wordset_path)
 
 # Create a dictionary to remove duplicates
 unique_dict = {}

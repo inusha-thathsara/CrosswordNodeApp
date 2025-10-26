@@ -1,0 +1,22 @@
+[
+  ["mountain", "Large natural elevation of the earth's surface"],
+  ["river", "Large natural stream of water"],
+  ["forest", "Large area covered chiefly with trees"],
+  ["ocean", "Vast body of salt water"],
+  ["desert", "Dry, barren area of landscape"],
+  ["valley", "Low area between hills or mountains"],
+  ["glacier", "Slow-moving mass of ice"],
+  ["volcano", "Mountain with a crater that can erupt"],
+  ["meadow", "Field of grass and wildflowers"],
+  ["island", "Piece of land surrounded by water"],
+  ["canyon", "Deep gorge with steep sides"],
+  ["waterfall", "Drop of water in a river"],
+  ["prairie", "Large open grassland"],
+  ["reef", "Rock, sandbar, or coral formation"],
+  ["savanna", "Grassland with scattered trees"],
+  ["tundra", "Treeless Arctic region"],
+  ["aurora", "Natural light display in the sky"],
+  ["rainstorm", "Downpour of rain"],
+  ["thunder", "Sound following lightning"],
+  ["sunlight", "Light from the sun"]
+]
