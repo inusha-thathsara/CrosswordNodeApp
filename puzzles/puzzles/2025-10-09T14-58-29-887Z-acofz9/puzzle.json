@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-09T14-58-29-887Z-acofz9",
+  "createdAt": "2025-10-09T14:58:29.887Z",
+  "solutionRaw": "p i t c h - d - s - \r\n- - - o - y a r n - \r\n- c - d - - w - i - \r\np a l a d i n - c - \r\n- r - - - - - - k - \r\ns a f f r o n - e - \r\n- m - - - - - - r - \r\n- e - - - - - - - - \r\na l b a t r o s s - \r\n- - - - - - - - - -",
+  "puzzleRaw": "1     4   - 6 - 9 - \r\n- - -   - 7       - \r\n- 2 -   - -   -   - \r\n3             -   - \r\n-   - - - - - -   - \r\n5             -   - \r\n-   - - - - - -   - \r\n-   - - - - - - - - \r\n8                 - \r\n- - - - - - - - - -",
+  "answerFlattened": "pitch-d-s----o-yarn--c-d--w-i-paladin-c--r------k-saffron-e--m------r--e--------albatross----------",
+  "displayString": "1  4 -6-9---- -7   --2- --w-i-3 l    -c--r------ -5   ro - -- ------ -- --------8 b   o s-----------",
+  "indicesRevealed": [
+    41,
+    32,
+    28,
+    38,
+    82,
+    26,
+    88,
+    55,
+    86,
+    54
+  ],
+  "legend": "\r\n\r\n1. (1,1) across: A resin derived from the sap of various pine trees.\r\n2. (2,3) down: A smooth chery candy made from suger, butter, cream or milkwith flavoring.\r\n3. (1,4) across: A heroic champion or paragon of chivalry.\r\n4. (4,1) down: Musical conclusion of a movement or composition.\r\n5. (1,6) across: The dried, orange yellow plant used to as dye and as acooking spice.\r\n6. (7,1) down: The time of each morning at which daylight begins.\r\n7. (6,2) across: A strand of twisted threads or a long elaborate narrative.\r\n8. (1,9) across: A large bird of the ocean having a hooked beek and long,narrow wings.\r\n9. (9,1) down: A snide, slightly stifled laugh.\r\n\r\n"
+}

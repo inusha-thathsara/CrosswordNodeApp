@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-12T15-33-38-323Z-jzd138",
+  "createdAt": "2025-10-12T15:33:38.323Z",
+  "solutionRaw": "d u m p l i n g - - \n- - - - - - o - s - \n- s - s a m o s a - \n- t - - - - d - l - \n- e - - p - l - a - \np a n c a k e - d - \n- k - - s - s - - - \n- - - - t - - - - - \n- - - t a c o - - - \n- - - - - - - - - -",
+  "puzzleRaw": "1           5   - - \n- - - - - -   - 7 - \n- 2 - 4           - \n-   - - - -   -   - \n-   - - 6 -   -   - \n3             -   - \n-   - -   -   - - - \n- - - -   - - - - - \n- - - 8       - - - \n- - - - - - - - - -",
+  "answerFlattened": "dumpling--------o-s--s-samosa--t----d-l--e--p-l-a-pancake-d--k--s-s-------t--------taco-------------",
+  "displayString": "1  p  5 -------- -7--2-4   s --t---- -l-- --6- - -3a    e- -- --s- -------t--------8ac -------------",
+  "indicesRevealed": [
+    56,
+    74,
+    51,
+    38,
+    85,
+    31,
+    3,
+    27,
+    64,
+    84
+  ],
+  "legend": "1. (1,1) across: Small dough parcel often steamed. 2. (2,3) down: Slice of beef for grilling. 3. (1,6) across: Flat cake cooked on a griddle. 4. (4,3) across: Fried pastry with savory filling. 5. (7,1) down: Long strips of pasta or dough. 6. (5,5) down: Italian noodles often served with sauce. 7. (9,2) down: Mixed raw vegetables dish. 8. (4,9) across: Folded tortilla with fillings"
+}

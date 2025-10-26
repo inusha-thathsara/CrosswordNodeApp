@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-15T08-47-54-584Z-nh78hu",
+  "createdAt": "2025-10-15T08:47:54.584Z",
+  "solutionRaw": "i s l a n d - - - - \n- a - - - - m - - - \n- v - - p - o - - - \n- a - - r - u - v - \n- n - - a - n - a - \n- n - - i - t - l - \nw a t e r f a l l - \n- - - - i - i - e - \n- - o c e a n - y - \n- - - - - - - - - -",
+  "puzzleRaw": "1 2         - - - - \n-   - - - - 5 - - - \n-   - - 4 -   - - - \n-   - -   -   - 7 - \n-   - -   -   -   - \n-   - -   -   -   - \n3                 - \n- - - -   -   -   - \n- - 6         -   - \n- - - - - - - - - -",
+  "answerFlattened": "island-----a----m----v--p-o----a--r-u-v--n--a-n-a--n--i-t-l-waterfall-----i-i-e---ocean-y-----------",
+  "displayString": "12la d----- ----5---- --4- ---- -- - -7-- -- -n- --n-- - - -3   r  l ----- - -e---6   n-y-----------",
+  "indicesRevealed": [
+    64,
+    88,
+    5,
+    2,
+    51,
+    67,
+    46,
+    86,
+    78,
+    3
+  ],
+  "legend": "1. (1,1) across: Piece of land surrounded by water. 2. (2,1) down: Grassland with scattered trees. 3. (1,7) across: Drop of water in a river. 4. (5,3) down: Large open grassland. 5. (7,2) down: Large natural elevation of the earth's surface. 6. (3,9) across: Vast body of salt water. 7. (9,4) down: Low area between hills or mountains"
+}

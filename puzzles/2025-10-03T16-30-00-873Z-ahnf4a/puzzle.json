@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-03T16-30-00-873Z-ahnf4a",
+  "createdAt": "2025-10-03T16:30:00.873Z",
+  "solutionRaw": "- - - - - - - - - - \r\n- c - - - - - - l - \r\ny a r n - - s - i - \r\n- r - - - h a r p - \r\n- a - c - - f - - - \r\n- m - o - - f - m - \r\n- e - r - - r - i - \r\na l b a t r o s s - \r\n- - - l - - n - t - \r\n- - - - - - - - - -",
+  "puzzleRaw": "- - - - - - - - - - \r\n- 1 - - - - - - 7 - \r\n2       - - 5 -   - \r\n-   - - - 6       - \r\n-   - 4 - -   - - - \r\n-   -   - -   - 8 - \r\n-   -   - -   -   - \r\n3                 - \r\n- - -   - -   -   - \r\n- - - - - - - - - -",
+  "answerFlattened": "-----------c------l-yarn--s-i--r---harp--a-c--f----m-o--f-m--e-r--r-i-albatross----l--n-t----------",
+  "displayString": "-----------1------7-2a  --5- -- ---6   -- -4--f----m- -- -8--e-r--r- -3   t   s---- -- -t-----------",
+  "indicesRevealed": [
+    61,
+    51,
+    46,
+    78,
+    63,
+    88,
+    88,
+    21,
+    74,
+    66
+  ],
+  "legend": "\r\n\r\n1. (2,2) down: A smooth chery candy made from suger, butter, cream or milkwith flavoring.\r\n2. (1,3) across: A strand of twisted threads or a long elaborate narrative.\r\n3. (1,8) across: A large bird of the ocean having a hooked beek and long,narrow wings.\r\n4. (4,5) down: A rock-like deposit of organism skeletons that make up reefs.\r\n5. (7,3) down: The dried, orange yellow plant used to as dye and as acooking spice.\r\n6. (6,4) across: Musical instrument with 46 or more open strings played byplucking.\r\n7. (9,2) down: Either of two fleshy folds surrounding the mouth.\r\n8. (9,6) down: A mass of fine water droplets in the air near or in contact withthe ground.\r\n\r\n"
+}

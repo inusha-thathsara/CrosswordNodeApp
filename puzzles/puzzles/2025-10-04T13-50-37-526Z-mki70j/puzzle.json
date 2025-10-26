@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-04T13-50-37-526Z-mki70j",
+  "createdAt": "2025-10-04T13:50:37.526Z",
+  "solutionRaw": "a l b a t r o s s - \r\n- - - - - - - - a - \r\n- - m - - - - - f - \r\n- - i - l - - - f - \r\n- - s n i c k e r - \r\n- - t - m - - - o - \r\n- - - l e a v e n - \r\n- - - i - - - - - - \r\n- - - p l a g u e - \r\n- - - - - - - - - -",
+  "puzzleRaw": "1               5 - \r\n- - - - - - - -   - \r\n- - 2 - - - - -   - \r\n- -   - 4 - - -   - \r\n- - 3             - \r\n- -   -   - - -   - \r\n- - - 6           - \r\n- - -   - - - - - - \r\n- - - 7           - \r\n- - - - - - - - - -",
+  "answerFlattened": "albatross---------a---m-----f---i-l---f---snicker---t-m---o----leaven----i---------plague----------",
+  "displayString": "1 b t   5--------- ---2----- --- -4---f---3   k  ---t- --- ----6   en---- ---------7l   e-----------",
+  "indicesRevealed": [
+    67,
+    68,
+    52,
+    38,
+    46,
+    4,
+    2,
+    84,
+    88,
+    38
+  ],
+  "legend": "\r\n\r\n1. (1,1) across: A large bird of the ocean having a hooked beek and long,narrow wings.\r\n2. (3,3) down: A mass of fine water droplets in the air near or in contact withthe ground.\r\n3. (3,5) across: A snide, slightly stifled laugh.\r\n4. (5,4) down: The egg-shaped citrus fruit having a green coloring and acidicjuice.\r\n5. (9,1) down: The dried, orange yellow plant used to as dye and as acooking spice.\r\n6. (4,7) across: An agent, such as yeast, that cause batter or dough to rise.\r\n6. (4,7) down: Either of two fleshy folds surrounding the mouth.\r\n7. (4,9) across: A widespread affliction or calamity.\r\n\r\n"
+}

@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-04T09-49-15-301Z-wforpy",
+  "createdAt": "2025-10-04T09:49:15.301Z",
+  "solutionRaw": "- c o r a l - - - - \r\n- a - - - - s - - - \r\n- r - - - y a r n - \r\n- a - - p - f - - - \r\n- m - - i - f - m - \r\n- e - - s - r - i - \r\na l b a t r o s s - \r\n- - - - o - n - t - \r\n- d a w n - - - - - \r\n- - - - - - - - - -",
+  "puzzleRaw": "- 1         - - - - \r\n-   - - - - 3 - - - \r\n-   - - - 5       - \r\n-   - - 4 -   - - - \r\n-   - -   -   - 7 - \r\n-   - -   -   -   - \r\n2                 - \r\n- - - -   -   -   - \r\n- 6       - - - - - \r\n- - - - - - - - - -",
+  "answerFlattened": "-coral-----a----s----r---yarn--a--p-f----m--i-f-m--e--s-r-i-albatross-----o-n-t--dawn--------------",
+  "displayString": "-1 ra ----- ----3---- ---5 r -- --4- ----m-- - -7-- --s- - -2l       -----o- - --6 w ---------------",
+  "indicesRevealed": [
+    74,
+    3,
+    41,
+    61,
+    4,
+    74,
+    83,
+    54,
+    27,
+    83
+  ],
+  "legend": "\r\n\r\n1. (2,1) down: A smooth chery candy made from suger, butter, cream or milkwith flavoring.\r\n1. (2,1) across: A rock-like deposit of organism skeletons that make up reefs.\r\n2. (1,7) across: A large bird of the ocean having a hooked beek and long,narrow wings.\r\n3. (7,2) down: The dried, orange yellow plant used to as dye and as acooking spice.\r\n4. (5,4) down: A solid cylinder or disk that fits snugly in a larger cylinder and moves under pressure as in an engine.\r\n5. (6,3) across: A strand of twisted threads or a long elaborate narrative.\r\n6. (2,9) across: The time of each morning at which daylight begins.\r\n7. (9,5) down: A mass of fine water droplets in the air near or in contact withthe ground.\r\n\r\n"
+}

@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-04T10-50-43-520Z-464w5y",
+  "createdAt": "2025-10-04T10:50:43.520Z",
+  "solutionRaw": "- - l e a v e n - - \r\nc - i - - - - - - - \r\no - p i t c h - p - \r\nr - - - - a - - i - \r\na l b a t r o s s - \r\nl - - - - a - - t - \r\n- - - - - m - - o - \r\ns n i c k e r - n - \r\n- - - - - l - - - - \r\n- - - - - - - - - -",
+  "puzzleRaw": "- - 2           - - \r\n1 -   - - - - - - - \r\n  - 4     5   - 7 - \r\n  - - - -   - -   - \r\n3                 - \r\n  - - - -   - -   - \r\n- - - - -   - -   - \r\n6             -   - \r\n- - - - -   - - - - \r\n- - - - - - - - - -",
+  "answerFlattened": "--leaven--c-i-------o-pitch-p-r----a--i-albatross-l----a--t------m--o-snicker-n------l-------------",
+  "displayString": "--2     --1-i------- -4it5 -7- ---- -- -3     os -l---- -- ------ --o-6ni k  - ------ --------------",
+  "indicesRevealed": [
+    71,
+    12,
+    50,
+    47,
+    23,
+    24,
+    46,
+    68,
+    74,
+    72
+  ],
+  "legend": "\r\n\r\n1. (1,2) down: A rock-like deposit of organism skeletons that make up reefs.\r\n2. (3,1) down: Either of two fleshy folds surrounding the mouth.\r\n2. (3,1) across: An agent, such as yeast, that cause batter or dough to rise.\r\n3. (1,5) across: A large bird of the ocean having a hooked beek and long,narrow wings.\r\n4. (3,3) across: A resin derived from the sap of various pine trees.\r\n5. (6,3) down: A smooth chery candy made from suger, butter, cream or milkwith flavoring.\r\n6. (1,8) across: A snide, slightly stifled laugh.\r\n7. (9,3) down: A solid cylinder or disk that fits snugly in a larger cylinder and moves under pressure as in an engine.\r\n\r\n"
+}

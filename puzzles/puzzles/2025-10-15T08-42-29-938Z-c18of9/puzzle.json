@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-15T08-42-29-938Z-c18of9",
+  "createdAt": "2025-10-15T08:42:29.938Z",
+  "solutionRaw": "- - - - - - - - - - \ng i t - f - d - c - \nr - - - i - a - o - \na l g o r i t h m - \np - - - e - a - p - \nh - - - w - b - i - \nq - - j a v a - l - \nl - - - l - s - e - \n- - - - l - e - r - \n- - - - - - - - - -",
+  "puzzleRaw": "- - - - - - - - - - \n1     - 3 - 4 - 5 - \n  - - -   -   -   - \n2                 - \n  - - -   -   -   - \n  - - -   -   -   - \n  - - 6       -   - \n  - - -   -   -   - \n- - - -   -   -   - \n- - - - - - - - - -",
+  "answerFlattened": "----------git-f-d-c-r---i-a-o-algorithm-p---e-a-p-h---w-b-i-q--java-l-l---l-s-e-----l-e-r-----------",
+  "displayString": "----------1  -3-4-5-r--- -a- -2      hm- --- -a- -h---w- - -q--6   - -l--- - - ----- -e- -----------",
+  "indicesRevealed": [
+    26,
+    37,
+    70,
+    46,
+    54,
+    20,
+    86,
+    60,
+    50,
+    38
+  ],
+  "legend": "1. (1,2) down: API query language. 1. (1,2) across: Version control system. 2. (1,4) across: Step-by-step computational procedure. 3. (5,2) down: Network security system. 4. (7,2) down: Organized collection of data. 5. (9,2) down: Translates source code to machine code. 6. (4,7) across: Object-oriented programming language"
+}

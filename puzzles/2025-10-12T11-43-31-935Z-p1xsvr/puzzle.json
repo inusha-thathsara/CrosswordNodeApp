@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-12T11-43-31-935Z-p1xsvr",
+  "createdAt": "2025-10-12T11:43:31.935Z",
+  "solutionRaw": "- - w - - - p - m - \n- - a - - - h - y - \n- a r t i f a c t - \nl - f - - - r - h - \ne - a - - - a - o - \ng - r - - - o - l - \ne - e - - - h - o - \nn - - - - - - - g - \nd e m o c r a c y - \n- - - - - - - - - -",
+  "puzzleRaw": "- - 1 - - - 4 - 6 - \n- -   - - -   -   - \n- 2               - \n3 -   - - -   -   - \n  -   - - -   -   - \n  -   - - -   -   - \n  -   - - -   -   - \n  - - - - - - -   - \n5                 - \n- - - - - - - - - -",
+  "answerFlattened": "--w---p-m---a---h-y--artifact-l-f---r-h-e-a---a-o-g-r---o-l-e-e---h-o-n-------g-democracy-----------",
+  "displayString": "--1---4-6---a--- - --2     c -3- ---r- - - --- - -g- --- - -e-e--- -o- ------- -5e  c   y-----------",
+  "indicesRevealed": [
+    60,
+    50,
+    68,
+    62,
+    36,
+    84,
+    88,
+    12,
+    81,
+    27
+  ],
+  "legend": "1. (3,1) down: The activity of fighting a war. 2. (2,3) across: Object made by a human. 3. (1,4) down: Traditional story regarded as historical. 4. (7,1) down: Ancient Egyptian ruler. 5. (1,9) across: Government by the people. 6. (9,1) down: Collection of cultural myths"
+}

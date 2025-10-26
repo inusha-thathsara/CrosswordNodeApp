@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-10T13-58-45-311Z-loidrp",
+  "createdAt": "2025-10-10T13:58:45.311Z",
+  "solutionRaw": "c r o c o d i l e - \r\n- - - h - r - - l - \r\na l p a c a - - e - \r\n- l - m - g - - p - \r\n- a - e - o - - h - \r\n- m - l - n - - a - \r\n- a - e - f - - n - \r\n- - k o a l a - t - \r\n- - - n - y - - - - \r\n- - - - - - - - - -",
+  "puzzleRaw": "1     3   5     6 - \r\n- - -   -   - -   - \r\n2 4         - -   - \r\n-   -   -   - -   - \r\n-   -   -   - -   - \r\n-   -   -   - -   - \r\n-   -   -   - -   - \r\n- - 7         -   - \r\n- - -   -   - - - - \r\n- - - - - - - - - -",
+  "answerFlattened": "crocodile----h-r--l-alpaca--e--l-m-g--p--a-e-o--h--m-l-n--a--a-e-f--n---koala-t----n-y-------------",
+  "displayString": "1r 3 5  6---- -r-- -24p   -- -- - - -- --a-e- --h-- - -n-- -- - - -- ---7  l -t---- - --------------",
+  "indicesRevealed": [
+    48,
+    43,
+    22,
+    15,
+    55,
+    78,
+    1,
+    41,
+    75,
+    22
+  ],
+  "legend": "\r\n\r\n1. (1,1) across: Large reptile with powerful jaws\r\n2. (1,3) across: Domesticated camelid with soft fleece\r\n3. (4,1) down: Lizard that changes color\r\n4. (2,3) down: Pack animal related to camels\r\n5. (6,1) down: Agile flying insect with two pairs of wings\r\n6. (9,1) down: Large mammal with a trunk\r\n7. (3,8) across: Eucalyptus-eating marsupial\r\n\r\n"
+}

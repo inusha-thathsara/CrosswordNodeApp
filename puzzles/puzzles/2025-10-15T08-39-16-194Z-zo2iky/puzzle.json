@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-15T08-39-16-194Z-zo2iky",
+  "createdAt": "2025-10-15T08:39:16.194Z",
+  "solutionRaw": "a r t i f a c t - - \n- - r - - - - - - - \n- - e - - c - l - - \ne - a - - o - e - - \nm y t h o l o g y - \np - y - - o - e - - \ni - - - - n - n - - \nr - - - - y - d - - \ne - - - - - - - - - \n- - - - - - - - - -",
+  "puzzleRaw": "1   2           - - \n- -   - - - - - - - \n- -   - - 5 - 6 - - \n3 -   - -   -   - - \n4                 - \n  -   - -   -   - - \n  - - - -   -   - - \n  - - - -   -   - - \n  - - - - - - - - - \n- - - - - - - - - -",
+  "answerFlattened": "artifact----r---------e--c-l--e-a--o-e--mythology-p-y--o-e--i----n-n--r----y-d--e-------------------",
+  "displayString": "1r2   ct---- --------- --5-6--3-a-- - --4 th  o  - - -- -e--i---- - -- ----y- -- -------------------",
+  "indicesRevealed": [
+    7,
+    43,
+    6,
+    42,
+    75,
+    60,
+    32,
+    1,
+    57,
+    46
+  ],
+  "legend": "1. (1,1) across: Object made by a human. 2. (3,1) down: Formally concluded agreement. 3. (1,4) down: Extensive group of states under one authority. 4. (1,5) across: Collection of cultural myths. 5. (6,3) down: Territory ruled by a distant state. 6. (8,3) down: Traditional story regarded as historical"
+}

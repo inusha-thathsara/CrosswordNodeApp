@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-26T16-15-37-921Z-qzyysp",
+  "createdAt": "2025-10-26T16:15:37.921Z",
+  "solutionRaw": "c - - p - - - - t - \nr - - h - m - - r - \nu - - a - o - - e - \ns - - r - n - - a - \na - - a - a - - t - \nd e m o c r a c y - \ne - - h - c - - - - \n- - - - - h - - - - \nc o l o n y - - - - \n- - - - - - - - - -",
+  "puzzleRaw": "1 - - 2 - - - - 5 - \n  - -   - 4 - -   - \n  - -   -   - -   - \n  - -   -   - -   - \n  - -   -   - -   - \n3                 - \n  - -   -   - - - - \n- - - - -   - - - - \n6           - - - - \n- - - - - - - - - -",
+  "answerFlattened": "c--p----t-r--h-m--r-u--a-o--e-s--r-n--a-a--a-a--t-democracy-e--h-c---------h----colony--------------",
+  "displayString": "1--2----5-r-- -4--r- -- - --e- --r-n-- - -- - -- -3e  c   y- -- - ---------h----6  o  --------------",
+  "indicesRevealed": [
+    51,
+    35,
+    75,
+    18,
+    83,
+    28,
+    54,
+    33,
+    58,
+    10
+  ],
+  "legend": "1. (1,1) down: Medieval military expedition. 2. (4,1) down: Ancient Egyptian ruler. 3. (1,6) across: Government by the people. 4. (6,2) down: Rule by a king or queen. 5. (9,1) down: Formally concluded agreement. 6. (1,9) across: Territory ruled by a distant state"
+}

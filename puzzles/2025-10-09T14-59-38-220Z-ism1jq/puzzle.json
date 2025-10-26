@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-09T14-59-38-220Z-ism1jq",
+  "createdAt": "2025-10-09T14:59:38.220Z",
+  "solutionRaw": "- - p - - - - l - - \r\n- m i s t - l i p - \r\n- - t - - s - m - - \r\nc - c a r a m e l - \r\no - h - - f - - - - \r\nd - - - - f - - - - \r\na l b a t r o s s - \r\n- - - - - o - - - - \r\nl e a v e n - - - - \r\n- - - - - - - - - -",
+  "puzzleRaw": "- - 1 - - - - 7 - - \r\n- 2       - 8     - \r\n- -   - - 6 -   - - \r\n3 - 4             - \r\n  -   - -   - - - - \r\n  - - - -   - - - - \r\n5                 - \r\n- - - - -   - - - - \r\n9           - - - - \r\n- - - - - - - - - -",
+  "answerFlattened": "--p----l---mist-lip---t--s-m--c-caramel-o-h--f----d----f----albatross------o----leaven-------------",
+  "displayString": "--1----7---2   -8  --- --6-m--3-4 r m l-o-h-- ---- ----f----5     o  ------ ----9    n--------------",
+  "indicesRevealed": [
+    40,
+    42,
+    55,
+    38,
+    34,
+    66,
+    55,
+    85,
+    27,
+    36
+  ],
+  "legend": "\r\n\r\n1. (3,1) down: A resin derived from the sap of various pine trees.\r\n2. (2,2) across: A mass of fine water droplets in the air near or in contact withthe ground.\r\n3. (1,4) down: Musical conclusion of a movement or composition.\r\n4. (3,4) across: A smooth chery candy made from suger, butter, cream or milkwith flavoring.\r\n5. (1,7) across: A large bird of the ocean having a hooked beek and long,narrow wings.\r\n6. (6,3) down: The dried, orange yellow plant used to as dye and as acooking spice.\r\n7. (8,1) down: The egg-shaped citrus fruit having a green coloring and acidicjuice.\r\n8. (7,2) across: Either of two fleshy folds surrounding the mouth.\r\n9. (1,9) across: An agent, such as yeast, that cause batter or dough to rise.\r\n\r\n"
+}

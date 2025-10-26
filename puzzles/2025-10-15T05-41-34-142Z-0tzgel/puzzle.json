@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-15T05-41-34-142Z-0tzgel",
+  "createdAt": "2025-10-15T05:41:34.142Z",
+  "solutionRaw": "a l g o r i t h m - \n- - - - o - - - - - \n- g - - b - - - - - \np r o t o c o l - - \n- a - - t - - - - - \n- p - b i n a r y - \n- h - - c - - e - - \n- q - - s - - s - - \n- l - - - g i t - - \n- - - - - - - - - -",
+  "puzzleRaw": "1       4         - \n- - - -   - - - - - \n- 3 - -   - - - - - \n2               - - \n-   - -   - - - - - \n-   - 5       6   - \n-   - -   - -   - - \n-   - -   - -   - - \n-   - - - 7     - - \n- - - - - - - - - -",
+  "answerFlattened": "algorithm-----o------g--b-----protocol---a--t------p-binary--h--c--e---q--s--s---l---git------------",
+  "displayString": "1l  4    ----- ------3-- -----2ro oc  --- --t------ -5 na6 --h-- -- --- --s-- --- ---7  ------------",
+  "indicesRevealed": [
+    32,
+    74,
+    61,
+    56,
+    1,
+    31,
+    44,
+    35,
+    34,
+    55
+  ],
+  "legend": "1. (1,1) across: Step-by-step computational procedure. 2. (1,4) across: Rules for network communication. 3. (2,3) down: API query language. 4. (5,1) down: Field of autonomous machines. 5. (4,6) across: Base-2 numeral system. 6. (8,6) down: Architectural style for APIs. 7. (6,9) across: Version control system"
+}

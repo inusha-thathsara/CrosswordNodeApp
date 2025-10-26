@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-12T15-31-35-497Z-pji44g",
+  "createdAt": "2025-10-12T15:31:35.497Z",
+  "solutionRaw": "b - - - p - - - - - \na l g o r i t h m - \nn - r - o - - - - - \nd - a - t - - - - - \nw - p - o - - - r - \ni - h - c a c h e - \nd - q - o - - - s - \nt - l - l - g i t - \nh - - - - - - - - - \n- - - - - - - - - -",
+  "puzzleRaw": "1 - - - 4 - - - - - \n2   3             - \n  -   -   - - - - - \n  -   -   - - - - - \n  -   -   - - - 6 - \n  -   - 5         - \n  -   -   - - -   - \n  -   -   - 7     - \n  - - - - - - - - - \n- - - - - - - - - -",
+  "answerFlattened": "b---p-----algorithm-n-r-o-----d-a-t-----w-p-o---r-i-h-cache-d-q-o---s-t-l-l-git-h-------------------",
+  "displayString": "1---4-----2 3    hm-n- - ----- -a-t----- - -o---6- - -5a  e- - - --- -t- - -7i - -------------------",
+  "indicesRevealed": [
+    32,
+    20,
+    17,
+    70,
+    77,
+    44,
+    58,
+    18,
+    34,
+    55
+  ],
+  "legend": "1. (1,1) down: Amount of data transferable. 2. (1,2) across: Step-by-step computational procedure. 3. (3,2) down: API query language. 4. (5,1) down: Rules for network communication. 5. (5,6) across: Stores data for quick access. 6. (9,5) down: Architectural style for APIs. 7. (7,8) across: Version control system"
+}

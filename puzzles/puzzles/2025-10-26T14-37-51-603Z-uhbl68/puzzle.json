@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-26T14-37-51-603Z-uhbl68",
+  "createdAt": "2025-10-26T14:37:51.603Z",
+  "solutionRaw": "w r e s t l i n g - \na - - - r - - - - - \nt e n n i s - - a - \ne - - - a - - - r - \nr - c - t - - - c - \np - h - h - - - h - \no - e - l - - - e - \nl - s n o o k e r - \no - s - n - - - y - \n- - - - - - - - - -",
+  "puzzleRaw": "1       3         - \n  - - -   - - - - - \n2           - - 6 - \n  - - -   - - -   - \n  - 4 -   - - -   - \n  -   -   - - -   - \n  -   -   - - -   - \n  - 5             - \n  -   -   - - -   - \n- - - - - - - - - -",
+  "answerFlattened": "wrestling-a---r-----tennis--a-e---a---r-r-c-t---c-p-h-h---h-o-e-l---e-l-snooker-o-s-n---y-----------",
+  "displayString": "1 e 3    - ---r-----2    s--6- --- --- - -4-t---c- -h-h--- - -e-l--- - -5   k  - - - --- -----------",
+  "indicesRevealed": [
+    44,
+    62,
+    54,
+    14,
+    48,
+    64,
+    76,
+    25,
+    52,
+    2
+  ],
+  "legend": "1. (1,1) across: Pins and takedowns. 1. (1,1) down: Aquatic ball game. 2. (1,3) across: Racquet sport played on a court. 3. (5,1) down: Swim, bike, run. 4. (3,5) down: Strategic board game. 5. (3,8) across: Cue sport with colored balls. 6. (9,3) down: Bow and arrow competition"
+}

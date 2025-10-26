@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-12T18-43-06-579Z-tvt1f8",
+  "createdAt": "2025-10-12T18:43:06.579Z",
+  "solutionRaw": "- c o r a l - - l - \n- a - - - - s - i - \n- r - - - h a r p - \n- a - - p - f - - - \n- m - - i - f - m - \n- e - - s - r - i - \na l b a t r o s s - \n- - - - o - n - t - \n- y a r n - - - - - \n- - - - - - - - - -",
+  "puzzleRaw": "- 1         - - 6 - \n-   - - - - 3 -   - \n-   - - - 5       - \n-   - - 4 -   - - - \n-   - -   -   - 8 - \n-   - -   -   -   - \n2                 - \n- - - -   -   -   - \n- 7       - - - - - \n- - - - - - - - - -",
+  "answerFlattened": "-coral--l--a----s-i--r---harp--a--p-f----m--i-f-m--e--s-r-i-albatross-----o-n-t--yarn---------------",
+  "displayString": "-1o   --6-- ----3- --r---5   -- --4- ---- --i-f-8-- -- - - -2   t os ----- -n- --7a n---------------",
+  "indicesRevealed": [
+    46,
+    76,
+    44,
+    2,
+    64,
+    67,
+    82,
+    66,
+    21,
+    84
+  ],
+  "legend": "1. (2,1) down: A smooth chery candy made from suger, butter, cream or milkwith flavoring.. 1. (2,1) across: A rock-like deposit of organism skeletons that make up reefs.. 2. (1,7) across: A large bird of the ocean having a hooked beek and long,narrow wings.. 3. (7,2) down: The dried, orange yellow plant used to as dye and as acooking spice.. 4. (5,4) down: A solid cylinder or disk that fits snugly in a larger cylinder and moves under pressure as in an engine.. 5. (6,3) across: Musical instrument with 46 or more open strings played byplucking.. 6. (9,1) down: Either of two fleshy folds surrounding the mouth.. 7. (2,9) across: A strand of twisted threads or a long elaborate narrative.. 8. (9,5) down: A mass of fine water droplets in the air near or in contact withthe ground."
+}

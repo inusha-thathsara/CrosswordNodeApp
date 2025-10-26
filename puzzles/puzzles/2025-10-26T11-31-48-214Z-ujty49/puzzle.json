@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-26T11-31-48-214Z-ujty49",
+  "createdAt": "2025-10-26T11:31:48.214Z",
+  "solutionRaw": "r e e f - - - - - - \ni - - - - - m - - - \nv o l c a n o - - - \ne - - - - - u - v - \nr - s a v a n n a - \n- - - - - - t - l - \nw a t e r f a l l - \n- - - - - - i - e - \n- c a n y o n - y - \n- - - - - - - - - -",
+  "puzzleRaw": "1       - - - - - - \n  - - - - - 5 - - - \n2             - - - \n  - - - - -   - 7 - \n  - 4             - \n- - - - - -   -   - \n3                 - \n- - - - - -   -   - \n- 6           -   - \n- - - - - - - - - -",
+  "answerFlattened": "reef------i-----m---volcano---e-----u-v-r-savanna-------t-l-waterfall-------i-e--canyon-y-----------",
+  "displayString": "1 e ------ -----5---2    n --- -----u-7-r-4a a   ------- - -3a e f   ------- - --6    n- -----------",
+  "indicesRevealed": [
+    36,
+    25,
+    2,
+    63,
+    45,
+    86,
+    40,
+    65,
+    43,
+    61
+  ],
+  "legend": "1. (1,1) down: Large natural stream of water. 1. (1,1) across: Rock, sandbar, or coral formation. 2. (1,3) across: Mountain with a crater that can erupt. 3. (1,7) across: Drop of water in a river. 4. (3,5) across: Grassland with scattered trees. 5. (7,2) down: Large natural elevation of the earth's surface. 6. (2,9) across: Deep gorge with steep sides. 7. (9,4) down: Low area between hills or mountains"
+}

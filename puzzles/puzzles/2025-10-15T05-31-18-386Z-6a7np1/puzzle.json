@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-15T05-31-18-386Z-6a7np1",
+  "createdAt": "2025-10-15T05:31:18.386Z",
+  "solutionRaw": "- - - l e g e n d - \n- - a - - - - - e - \nw a r f a r e - m - \n- - t - - - - - o - \n- - i - - - - - c - \n- - f - - - - - r - \np h a r a o h - a - \n- - c - - - - - c - \nm y t h o l o g y - \n- - - - - - - - - -",
+  "puzzleRaw": "- - - 3         6 - \n- - 2 - - - - -   - \n1             -   - \n- -   - - - - -   - \n- -   - - - - -   - \n- -   - - - - -   - \n4             -   - \n- -   - - - - -   - \n5                 - \n- - - - - - - - - -",
+  "answerFlattened": "---legend---a-----e-warfare-m---t-----o---i-----c---f-----r-pharaoh-a---c-----c-mythology-----------",
+  "displayString": "---3    6---2----- -1arf  e-m---t----- ---i-----c--- ----- -4 a    - --- ----- -5  h     -----------",
+  "indicesRevealed": [
+    32,
+    28,
+    26,
+    62,
+    42,
+    48,
+    23,
+    83,
+    21,
+    22
+  ],
+  "legend": "1. (1,3) across: The activity of fighting a war. 2. (3,2) down: Object made by a human. 3. (4,1) across: Traditional story regarded as historical. 4. (1,7) across: Ancient Egyptian ruler. 5. (1,9) across: Collection of cultural myths. 6. (9,1) down: Government by the people"
+}

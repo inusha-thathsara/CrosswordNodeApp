@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-26T14-27-04-138Z-fip5iv",
+  "createdAt": "2025-10-26T14:27:04.138Z",
+  "solutionRaw": "t r i a t h l o n - \n- - - - - a - - - - \ns u r f i n g - g - \n- - - - - d - - o - \n- b a s e b a l l - \n- - - - - a - - f - \n- - - - - l - - - - \n- - s a i l i n g - \n- - - - - - - - - - \n- - - - - - - - - -",
+  "puzzleRaw": "1         3       - \n- - - - -   - - - - \n2             - 6 - \n- - - - -   - -   - \n- 4               - \n- - - - -   - -   - \n- - - - -   - - - - \n- - 5             - \n- - - - - - - - - - \n- - - - - - - - - -",
+  "answerFlattened": "triathlon------a----surfing-g------d--o--baseball------a--f------l------sailing---------------------",
+  "displayString": "1    3  n------ ----2   in -6------ --o--4 s   l ------a-- ------l------5 i i  ---------------------",
+  "indicesRevealed": [
+    55,
+    38,
+    65,
+    74,
+    76,
+    8,
+    25,
+    47,
+    43,
+    24
+  ],
+  "legend": "1. (1,1) across: Swim, bike, run. 2. (1,3) across: Riding ocean waves. 3. (6,1) down: Fast-paced court game. 4. (2,5) across: American bat-and-ball pastime. 5. (3,8) across: Wind-powered water sport. 6. (9,3) down: Clubs, holes, and greens"
+}

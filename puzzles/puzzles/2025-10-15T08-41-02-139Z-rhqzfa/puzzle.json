@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-15T08-41-02-139Z-rhqzfa",
+  "createdAt": "2025-10-15T08:41:02.139Z",
+  "solutionRaw": "r a i n s t o r m - \n- - - - u - - - o - \n- - p - n - f - u - \n- - r - l - o - n - \ng l a c i e r - t - \n- - i - g - e - a - \n- - r - h - s - i - \n- - i - t - t - n - \nr e e f - - - - - - \n- - - - - - - - - -",
+  "puzzleRaw": "1       2       5 - \n- - - -   - - -   - \n- - 4 -   - 6 -   - \n- -   -   -   -   - \n3             -   - \n- -   -   -   -   - \n- -   -   -   -   - \n- -   -   -   -   - \n7       - - - - - - \n- - - - - - - - - -",
+  "answerFlattened": "rainstorm-----u---o---p-n-f-u---r-l-o-n-glacier-t---i-g-e-a---r-h-s-i---i-t-t-n-reef----------------",
+  "displayString": "1ai 2   5----- --- ---4- -6-u--- -l- - -3    e -t--- - - -a--- - - -i---i- - - -7  f----------------",
+  "indicesRevealed": [
+    2,
+    48,
+    28,
+    34,
+    58,
+    68,
+    83,
+    45,
+    72,
+    1
+  ],
+  "legend": "1. (1,1) across: Downpour of rain. 2. (5,1) down: Light from the sun. 3. (1,5) across: Slow-moving mass of ice. 4. (3,3) down: Large open grassland. 5. (9,1) down: Large natural elevation of the earth's surface. 6. (7,3) down: Large area covered chiefly with trees. 7. (1,9) across: Rock, sandbar, or coral formation"
+}

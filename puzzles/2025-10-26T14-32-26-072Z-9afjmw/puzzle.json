@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-26T14-32-26-072Z-9afjmw",
+  "createdAt": "2025-10-26T14:32:26.072Z",
+  "solutionRaw": "- - - p i s t o n - \n- h - - - n - - - - \np a l a d i n - - - \n- r - - - c - - - - \n- p - - - k - m - - \ny - - d - e - i - - \na l b a t r o s s - \nr - - w - - - t - - \nn - - n - - - - - - \n- - - - - - - - - -",
+  "puzzleRaw": "- - - 3   4       - \n- 2 - - -   - - - - \n1             - - - \n-   - - -   - - - - \n-   - - -   - 8 - - \n5 - - 7 -   -   - - \n6                 - \n  - -   - - -   - - \n  - -   - - - - - - \n- - - - - - - - - -",
+  "answerFlattened": "---piston--h---n----paladin----r---c-----p---k-m--y--d-e-i--albatross-r--w---t--n--n----------------",
+  "displayString": "---3 4ton--2--- ----1a     ---- --- ----- --- -8--5--7-e- --6    r  s- -- ---t--n--n----------------",
+  "indicesRevealed": [
+    21,
+    80,
+    55,
+    83,
+    68,
+    7,
+    6,
+    77,
+    8,
+    65
+  ],
+  "legend": "1. (1,3) across: A heroic champion or paragon of chivalry.. 2. (2,2) down: Musical instrument with 46 or more open strings played byplucking.. 3. (4,1) across: A solid cylinder or disk that fits snugly in a larger cylinder and moves under pressure as in an engine.. 4. (6,1) down: A snide, slightly stifled laugh.. 5. (1,6) down: A strand of twisted threads or a long elaborate narrative.. 6. (1,7) across: A large bird of the ocean having a hooked beek and long,narrow wings.. 7. (4,6) down: The time of each morning at which daylight begins.. 8. (8,5) down: A mass of fine water droplets in the air near or in contact withthe ground."
+}

@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-03T16-32-46-456Z-1wsksg",
+  "createdAt": "2025-10-03T16:32:46.456Z",
+  "solutionRaw": "a l b a t r o s s - \r\n- - - - - - - n - - \r\n- - - - - - l i p - \r\nc o r a l - - c - - \r\no - - - e - - k - - \r\nd - p l a g u e - - \r\na - - - v - - r - - \r\n- l i m e - - - - - \r\n- - - - n - - - - - \r\n- - - - - - - - - -",
+  "puzzleRaw": "1             3   - \r\n- - - - - - -   - - \r\n- - - - - - 7     - \r\n2       5 - -   - - \r\n  - - -   - -   - - \r\n  - 4           - - \r\n  - - -   - -   - - \r\n- 6       - - - - - \r\n- - - -   - - - - - \r\n- - - - - - - - - -",
+  "answerFlattened": "albatross--------n--------lip-coral--c--o---e--k--d-plague--a---v--r---lime---------n--------------",
+  "displayString": "1l    o3 -------- --------7  -2o a5--c-- --- -- -- -4la   -- --- -- ---6i  --------- ---------------",
+  "indicesRevealed": [
+    54,
+    33,
+    53,
+    37,
+    1,
+    31,
+    31,
+    6,
+    53,
+    72
+  ],
+  "legend": "\r\n\r\n1. (1,1) across: A large bird of the ocean having a hooked beek and long,narrow wings.\r\n2. (1,4) across: A rock-like deposit of organism skeletons that make up reefs.\r\n2. (1,4) down: Musical conclusion of a movement or composition.\r\n3. (8,1) down: A snide, slightly stifled laugh.\r\n4. (3,6) across: A widespread affliction or calamity.\r\n5. (5,4) down: An agent, such as yeast, that cause batter or dough to rise.\r\n6. (2,8) across: The egg-shaped citrus fruit having a green coloring and acidicjuice.\r\n7. (7,3) across: Either of two fleshy folds surrounding the mouth.\r\n\r\n"
+}

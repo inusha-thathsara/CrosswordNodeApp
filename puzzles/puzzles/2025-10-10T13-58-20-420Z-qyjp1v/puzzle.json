@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-10T13-58-20-420Z-qyjp1v",
+  "createdAt": "2025-10-10T13:58:20.420Z",
+  "solutionRaw": "- - b e a v e r - - \r\n- - u - - - - - - - \r\n- s t a r f i s h - \r\n- - t - - - - - - - \r\n- - e - - - t - z - \r\np o r c u p i n e - \r\n- - f - - - g - b - \r\np o l a r b e a r - \r\n- - y - - - r - a - \r\n- - - - - - - - - -",
+  "puzzleRaw": "- - 1           - - \r\n- -   - - - - - - - \r\n- 2               - \r\n- -   - - - - - - - \r\n- -   - - - 5 - 6 - \r\n3                 - \r\n- -   - - -   -   - \r\n4                 - \r\n- -   - - -   -   - \r\n- - - - - - - - - -",
+  "answerFlattened": "--beaver----u--------starfish---t---------e---t-z-porcupine---f---g-b-polarbear---y---r-a----------",
+  "displayString": "--1e ve ----u--------2   fi  ---t--------- ---5-6-3      n --- --- - -4o       --- --- -a-----------",
+  "indicesRevealed": [
+    26,
+    57,
+    6,
+    12,
+    71,
+    25,
+    88,
+    3,
+    5,
+    32
+  ],
+  "legend": "\r\n\r\n1. (3,1) down: Insect with colorful wings\r\n1. (3,1) across: Dam-building rodent\r\n2. (2,3) across: Five-armed echinoderm\r\n3. (1,6) across: Rodent with quills\r\n4. (1,8) across: Arctic apex predator\r\n5. (7,5) down: Striped big cat\r\n6. (9,5) down: Black and white striped animal\r\n\r\n"
+}

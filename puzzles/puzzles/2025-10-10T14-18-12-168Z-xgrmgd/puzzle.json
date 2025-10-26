@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-10T14-18-12-168Z-xgrmgd",
+  "createdAt": "2025-10-10T14:18:12.168Z",
+  "solutionRaw": "s h a w a r m a - - \n- - - - - i - - - - \nt - - p - s - w - - \na - s a m o s a - - \nc - - e - t - f - - \no m e l e t - f - - \n- - - l - o - l - - \ns a l a d - - e - - \n- - - - - - - - - - \n- - - - - - - - - -",
+  "puzzleRaw": "1         3     - - \n- - - - -   - - - - \n2 - - 5 -   - 8 - - \n  - 4           - - \n  - -   -   -   - - \n6           -   - - \n- - -   -   -   - - \n7         - -   - - \n- - - - - - - - - - \n- - - - - - - - - -",
+  "answerFlattened": "shawarma-------i----t--p-s-w--a-samosa--c--e-t-f--omelet-f-----l-o-l--salad--e----------------------",
+  "displayString": "1h   3 a------- ----2--5- -8--a-4 m  a-- -- - - --6  l  - ----- -o-l--7a a -- ----------------------",
+  "indicesRevealed": [
+    71,
+    65,
+    1,
+    73,
+    34,
+    53,
+    37,
+    7,
+    67,
+    30
+  ],
+  "legend": "1. (1,1) across: Spit-roasted meat wrap. 2. (1,3) down: Folded tortilla with fillings. 3. (6,1) down: Creamy Italian rice dish. 4. (3,4) across: Fried pastry with savory filling. 5. (4,3) down: Spanish rice with seafood or meat. 6. (1,6) across: Egg dish folded over fillings. 7. (1,8) across: Mixed raw vegetables dish. 8. (8,3) down: Batter cooked in patterned iron"
+}

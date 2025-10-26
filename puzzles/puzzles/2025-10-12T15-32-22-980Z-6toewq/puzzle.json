@@ -1,0 +1,21 @@
+{
+  "puzzleId": "2025-10-12T15-32-22-980Z-6toewq",
+  "createdAt": "2025-10-12T15:32:22.980Z",
+  "solutionRaw": "o - p - p - g - j - \nc r o c o d i l e - \nt - r - l - r - l - \no - c - a - a - l - \np - u - r - f - y - \nu - p - b - f - f - \ns - i - e - e - i - \n- - n - a - - - s - \n- z e b r a - - h - \n- - - - - - - - - -",
+  "puzzleRaw": "1 - 3 - 4 - 5 - 6 - \n2                 - \n  -   -   -   -   - \n  -   -   -   -   - \n  -   -   -   -   - \n  -   -   -   -   - \n  -   -   -   -   - \n- -   -   - - -   - \n- 7         - -   - \n- - - - - - - - - -",
+  "answerFlattened": "o-p-p-g-j-crocodile-t-r-l-r-l-o-c-a-a-l-p-u-r-f-y-u-p-b-f-f-s-i-e-e-i---n-a---s--zebra--h-----------",
+  "displayString": "1-3-4-5-6-2  c     - - - - - - - - - -l-p-u-r- -y- - - - -f- - - - -i--- - --- --7 b a-- -----------",
+  "indicesRevealed": [
+    44,
+    42,
+    38,
+    85,
+    68,
+    83,
+    40,
+    13,
+    58,
+    48
+  ],
+  "legend": "1. (1,1) down: Eight-armed cephalopod. 2. (1,2) across: Large reptile with powerful jaws. 3. (3,1) down: Rodent with quills. 4. (5,1) down: Arctic apex predator. 5. (7,1) down: Tall mammal with a long neck. 6. (9,1) down: Gelatinous marine animal. 7. (2,9) across: Black and white striped animal"
+}
