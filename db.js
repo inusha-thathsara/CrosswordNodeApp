@@ -1,10 +1,11 @@
 // MongoDB connection helper (optional in-memory fallback if enabled) + password helpers
-const { MongoClient, ObjectId } = require('mongodb');
+const { MongoClient, ObjectId, ServerApiVersion } = require('mongodb');
 const bcrypt = require('bcryptjs');
 const crypto = require('crypto');
 
-const uri = process.env.MONGO_URI || 'mongodb://localhost:27017';
-const DB_NAME = process.env.MONGO_DB || 'crossworddb';
+// Prefer Atlas-style env names but keep backward compatibility
+const uri = process.env.MONGODB_URI || process.env.MONGO_URI || 'mongodb://localhost:27017';
+const DB_NAME = process.env.MONGODB_DB || process.env.MONGO_DB || 'crossworddb';
 const allowMemory = /^true$/i.test(process.env.ALLOW_MEMORY_FALLBACK || '');
 
 let client;
@@ -29,11 +30,31 @@ function hashPassword(plain) {
 async function connect() {
   if (db) return db;
   if (connectingPromise) return connectingPromise;
-  client = new MongoClient(uri, { serverSelectionTimeoutMS: 3000, connectTimeoutMS: 3000 });
+  const opts = {
+    serverSelectionTimeoutMS: 10000,
+    connectTimeoutMS: 10000,
+    // Use stable API for Atlas; harmless for localhost
+    serverApi: { version: ServerApiVersion.v1, strict: true, deprecationErrors: true }
+  };
+  client = new MongoClient(uri, opts);
   connectingPromise = client.connect()
-    .then(() => {
+    .then(async () => {
+      // Optional: confirm connection by pinging the admin DB (mirrors Atlas sample)
+      try {
+        await client.db('admin').command({ ping: 1 });
+        console.log('[DB] Pinged your deployment. You successfully connected to MongoDB!');
+      } catch (e) {
+        console.warn('[DB] Ping failed (connection may still be usable):', e.message);
+      }
       db = client.db(DB_NAME);
-      console.log(`[DB] Connected to MongoDB at ${uri} (db=${DB_NAME})`);
+      // Avoid logging credentials from the URI
+      try {
+        const safe = new URL(uri.replace('mongodb+srv', 'http'));
+        const host = safe.host;
+        console.log(`[DB] Connected to MongoDB (${host}) db=${DB_NAME}`);
+      } catch (_) {
+        console.log(`[DB] Connected to MongoDB (db=${DB_NAME})`);
+      }
       return db;
     })
     .catch(err => {

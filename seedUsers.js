@@ -4,6 +4,7 @@
 //   node seedUsers.js alice bob charlie     -> seeds specified users (lowercased)
 //   npm run seed                            -> uses package script (default users)
 
+try { require('dotenv').config(); } catch (_) {}
 const { addUserWithPassword, findUser, connect } = require('./db');
 
 // DEFAULT_USERS supports either plain username OR username:password format.
@@ -59,7 +60,7 @@ async function seed(users) {
   } catch (e) {
     if (e && (e.code === 'ECONNREFUSED' || /ECONNREFUSED/.test(e.message))) {
       console.error('\n[SEED] ERROR: Unable to connect to MongoDB.');
-      console.error('[SEED] Make sure MongoDB is running on', process.env.MONGO_URI || 'mongodb://localhost:27017');
+  console.error('[SEED] Make sure MongoDB is running on', process.env.MONGODB_URI || process.env.MONGO_URI || 'mongodb://localhost:27017');
       console.error('[SEED] Example (Docker): docker run -d --name crossword-mongo -p 27017:27017 mongo:7');
       console.error('[SEED] Example (Local service): start the MongoDB Windows service or run mongod');
     } else {

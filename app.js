@@ -1,3 +1,5 @@
+// Load .env if present (helps local dev and Windows PowerShell sessions)
+try { require('dotenv').config(); } catch (_) {}
 const express = require('express');
 const { spawn } = require('child_process');
 const crypto = require('crypto');

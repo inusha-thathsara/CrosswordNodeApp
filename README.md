@@ -25,8 +25,11 @@ Then open http://localhost:3000
 With MongoDB (local or Atlas):
 ```powershell
 $env:ALLOW_MEMORY_FALLBACK=""            # disable fallback in prod
-$env:MONGO_URI="mongodb://localhost:27017"  # or your Atlas URI
-$env:MONGO_DB="crossworddb"
+# Prefer Atlas SRV string in MONGODB_URI (fallback: MONGO_URI)
+$env:MONGODB_URI="mongodb+srv://<user>:<pass>@<cluster-host>/CrosswordDB?retryWrites=true&w=majority"
+$env:MONGODB_DB="CrosswordDB"
+$env:MONGO_URI=""   # optional legacy name
+$env:MONGO_DB=""    # optional legacy name
 $env:SESSION_SECRET="<random-long-string>"
 npm install
 npm run seed   # creates initial users
@@ -53,8 +56,8 @@ Examples: Mailtrap, Gmail (App Password), Microsoft 365, SendGrid (SMTP). See th
 ## Environment variables
 
 Minimum for production:
-- `MONGO_URI` – e.g. mongodb+srv://… (Atlas) or mongodb://localhost:27017
-- `MONGO_DB` – database name (e.g. crossworddb)
+- `MONGODB_URI` – e.g. mongodb+srv://… (Atlas) or mongodb://localhost:27017 (legacy: `MONGO_URI`)
+- `MONGODB_DB` – database name (e.g. CrosswordDB) (legacy: `MONGO_DB`)
 - `SESSION_SECRET` – long random string for sessions
 - `PORT` – optional, default 3000
 - `APP_BASE_URL` – public base URL used in reset emails
