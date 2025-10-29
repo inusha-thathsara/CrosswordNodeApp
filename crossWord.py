@@ -317,7 +317,7 @@ class Word(object):
         return self.word
 
 
-### end class, start execution
+### end class, start reusable generation helpers
 start_full = float(time.time())
 
 
@@ -369,30 +369,76 @@ def pick_random_wordset_path(dir_name="wordsets"):
     # fallback to default file in root
     return os.path.join(base_dir, 'words.json')
 
-wordset_path = pick_random_wordset_path()
-word_list_raw = load_word_list(wordset_path)
+def generate_puzzle_payload():
+    """Generate a puzzle and return a JSON-serializable payload similar to the Node path.
+    Returns dict with keys: myStringUnedited, answerArrayFlat, legend
+    """
+    wordset_path = pick_random_wordset_path()
+    word_list_raw = load_word_list(wordset_path)
 
-# Create a dictionary to remove duplicates
-unique_dict = {}
-seen_values = set()
+    # Deduplicate by clue
+    unique_dict = {}
+    seen_values = set()
+    for item in word_list_raw:
+        key, value = item
+        if value not in seen_values:
+            unique_dict[key] = value
+            seen_values.add(value)
+    word_list = [[key, value] for key, value in unique_dict.items()]
 
-for item in word_list_raw:
-    key, value = item
-    if value not in seen_values:
-        unique_dict[key] = value
-        seen_values.add(value)
+    a = Crossword(10, 10, '-', 5000, word_list)
+    a.compute_crossword(2)
 
-# Convert dictionary back to list of lists
-word_list = [[key, value] for key, value in unique_dict.items()]
+    # Lines as previously emitted
+    solution = a.solution().strip().splitlines()
+    display = a.display().strip().splitlines()
+    legend_lines = a.legend().strip().splitlines()
 
-a = Crossword(10, 10, '-', 5000, word_list)
-a.compute_crossword(2)
-##############print (a.word_bank())
-print (a.solution())
-#print (a.word_find())
-print (a.display())
-print (a.legend())
-#############print (len(a.current_word_list), 'out of', len(word_list_raw))
-#print (a.debug)
-end_full = float(time.time())
-#print (end_full - start_full)
+    # Build answerArrayFlat from solution (10x10 grid separated by spaces)
+    array2D = []
+    for row in solution[:10]:
+        row_vals = [x for x in row.strip().split() if x != '']
+        array2D.append(row_vals)
+    answerArrayFlat = ''.join(ch for row in array2D for ch in row)
+
+    # Build myStringUnedited as in app.js from display grid
+    puzzle_raw = '\n'.join(display[:10])
+    s = puzzle_raw.replace('\n', '').replace('\r', '')
+    s = re.sub(r'\s{2}', '@', s)
+    s = re.sub(r'\s+', '', s)
+    s = s.replace('@', ' ')
+
+    # Reveal up to 10 characters (not '-' or digits)
+    indices = []
+    max_reveals = 10
+    n = len(s)
+    while len(indices) < max_reveals and len(indices) < n:
+        idx = random.randint(0, max(0, n - 1))
+        ch = s[idx]
+        if ch != '-' and not ch.isdigit() and idx not in indices:
+            indices.append(idx)
+    s_list = list(s)
+    for idx in indices:
+        if idx < len(s_list) and idx < len(answerArrayFlat):
+            s_list[idx] = answerArrayFlat[idx]
+    myStringUnedited = ''.join(s_list)
+
+    # Legend combined with periods
+    legend_text = '. '.join([ln.strip() for ln in legend_lines if ln.strip()])
+
+    return {
+        'myStringUnedited': myStringUnedited,
+        'answerArrayFlat': answerArrayFlat,
+        'legend': legend_text
+    }
+
+
+if __name__ == '__main__':
+    # Maintain legacy CLI behavior (stdout for Node spawn parsing)
+    payload = generate_puzzle_payload()
+    # Reconstruct similar multi-line output for backward compatibility
+    # For CLI mode, print a 10x10 solution-like block and a display-like block is no longer strictly required.
+    # We will print just enough to keep older flows somewhat sane.
+    print('\n'.join([]))
+    print(payload['myStringUnedited'])
+    print(payload['legend'])
